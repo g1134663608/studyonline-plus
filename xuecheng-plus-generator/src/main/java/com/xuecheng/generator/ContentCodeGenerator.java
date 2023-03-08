@@ -30,7 +30,8 @@ public class ContentCodeGenerator {
 			 "course_market",
 			 "teachplan",
 			 "teachplan_media",
-			 "course_teacher"
+			 "course_teacher",
+			 "course_category"
 //			 "course_publish",
 //			 "course_publish_pre"
 //			"course_category"
@@ -66,7 +67,7 @@ public class ContentCodeGenerator {
 		// 数据库配置
 		DataSourceConfig dsc = new DataSourceConfig();
 		dsc.setDbType(DbType.MYSQL);
-		dsc.setUrl("jdbc:mysql://192.168.101.65:3306/xc_content" + SERVICE_NAME
+		dsc.setUrl("jdbc:mysql://192.168.101.65:3306/xc_" + SERVICE_NAME
 				+ "?serverTimezone=UTC&useUnicode=true&useSSL=false&characterEncoding=utf8");
 //		dsc.setDriverName("com.mysql.jdbc.Driver");
 		dsc.setDriverName("com.mysql.cj.jdbc.Driver");
