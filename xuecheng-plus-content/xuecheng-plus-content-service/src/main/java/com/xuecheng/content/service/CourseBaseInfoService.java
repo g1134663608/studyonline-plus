@@ -33,4 +33,13 @@ public interface CourseBaseInfoService {
      * @date 2023/3/8 17:17
     */
     public CourseBaseInfoDto createCourseBase(Long companyId,AddCourseDto addCourseDto);
+
+    /**
+     * @description TODO
+     * @param courseId
+     * @return com.xuecheng.content.model.dto.CourseBaseInfoDto
+     * @author Starry
+     * @date 2023/3/8 20:32
+    */
+    public CourseBaseInfoDto getCourseBaseInfo(Long courseId);
 }
